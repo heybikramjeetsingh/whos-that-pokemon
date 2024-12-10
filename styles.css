@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --white-color: #fff;
+  --button-correct: #5aae76;
+  --button-wrong: #e13e3e;
+  --button-hover: #aaa;
+  --button-border-radius: 8px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("assets/pokemon_world.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white-color);
+}
+
+.container {
+  display: flex;
+  max-width: min(90%, 1200px);
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  margin: 0;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  min-height: 100px;
+}
+
+#pokemonImage {
+  height: clamp(150px, 25vw, 300px);
+}
+
+.options-container {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  gap: 20px;
+}
+
+button {
+  height: 52px;
+  margin: 0;
+  width: clamp(120px, calc(50% - 20px), 300px);
+  font-size: clamp(14px, 2vw, 17px);
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: var(--white-color);
+  border: none;
+  border-radius: var(--button-border-radius);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  color: var(--white-color);
+  transform: scale(1.05);
+}
+
+button.correct {
+  background-color: var(--button-correct);
+  color: var(--white-color);
+}
+
+button.wrong {
+  background-color: var(--button-wrong);
+  color: var(--white-color);
+}
+
+#loadingContainer {
+  height: clamp(300px, 50vh, 500px);
+  display: none;
+  width: 100%;
+}
+
+#loadingIcon {
+  width: clamp(100px, 20vw, 200px);
+  height: auto;
+  position: relative;
+  top: 20%;
+}
+
+#points {
+  margin: 20px;
+  font-size: clamp(18px, 3vw, 24px);
+  text-align: center;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+#points:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.para {
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(14px, 2vw, 18px);
+  max-width: 800px;
+  margin: 20px auto;
+}

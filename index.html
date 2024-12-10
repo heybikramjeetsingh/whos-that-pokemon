@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who's that Pokemon?</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <script src="script.js" defer></script>
+</head>
+
+<body class="game">
+    <div class="container">
+        <h4>
+            <img class="header" id="result" src="assets/pokemon_heading.png" alt="Who's That Pokémon logo" />
+        </h4>
+        <h4 id="points">
+            Points: <span id="pointsValue">0</span>/<span id="totalCount">0</span>
+        </h4>
+        <img id="pokemonImage" alt="A random Pokémon sprite"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/132.svg" />
+    </div>
+
+    <div id="options" class="options-container">
+        <button>Butterfree</button>
+        <button>Ditto</button>
+        <button>Mr-Mime</button>
+        <button>Nidorino</button>
+    </div>
+
+    <div id="loadingContainer" class="loading-container">
+        <img id="loadingIcon" src="assets/loading_icon.gif" alt="Loading animation" />
+    </div>
+
+    <p class="para">
+        Challenge your Pokémon knowledge in Who's That Pokémon?! Guess the names
+        of Pokémon based on their images, earn points for correct answers, and
+        test how well you really know your Pokédex!
+    </p>
+
+    <footer>
+        <p class="para">
+            For more information, please read our <a href="disclaimer.html" class="link">Disclaimer</a>.
+        </p>
+    </footer>
+
+</body>
+
+</html>
