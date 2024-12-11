@@ -31,7 +31,6 @@ body {
   color: var(--white-color);
   font-family: 'Chakra Petch', sans-serif;
   height: 100%;
-  position: relative;
 }
 
 .container {
@@ -197,6 +196,12 @@ button.wrong {
   button {
     font-size: 12px;
     height: 40px;
+  }
+  
+  #points {
+    font-size: clamp(12px, 3vw, 16px);
+    position: relative;
+    bottom: -60px;
   }
 
 }
