@@ -19,7 +19,7 @@ body.disclaimer {
   color: #333;
   margin: 0;
   padding: 0;
-  height: 100vh; /* Full height to ensure the div is visible */
+  min-height: 100vh; /* Changed to min-height for better responsiveness */
   background-image: url("assets/pokemon_world.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -35,33 +35,33 @@ body.disclaimer {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  max-width: 1000px; /* Increased max-width for a wider appearance */
-  width: 90%; /* Adjusted width for responsiveness */
-  margin: 20px auto; /* Added margin for visibility and centering */
+  padding: 20px; /* Reduced padding for smaller screens */
+  max-width: 1000px;
+  width: 90%;
+  margin: 20px auto;
 }
 
 .header {
   font-family: "Playwrite HU", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem; /* Reduced font size for smaller screens */
   font-weight: 400;
   color: #2c3e50;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Adjusted margin for better spacing */
 }
 
 .subheader {
   font-family: "Chakra Petch", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem; /* Reduced font size for smaller screens */
   font-weight: 500;
   color: #2980b9;
-  margin-top: 20px;
+  margin-top: 15px; /* Adjusted margin for better spacing */
 }
 
 .para {
   font-family: "Zen Dots", sans-serif;
   font-weight: 400;
-  font-size: clamp(14px, 2vw, 18px);
-  margin: 15px 0;
+  font-size: clamp(12px, 2vw, 16px); /* Adjusted clamp for smaller screens */
+  margin: 10px 0; /* Adjusted margin for better spacing */
   max-width: 800px;
   color: #555;
 }
@@ -86,9 +86,9 @@ a.link:hover {
 }
 
 footer {
-  margin-top: 30px;
+  margin-top: 20px; /* Adjusted margin for better spacing */
   font-family: "Press Start 2P", cursive;
-  font-size: 1.2rem;
+  font-size: 1rem; /* Reduced font size for smaller screens */
   text-align: center;
 }
 
@@ -102,4 +102,22 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px; /* Further reduced padding for very small screens */
+  }
+  .header {
+    font-size: 1.8rem; /* Further reduced font size for very small screens */
+  }
+  .subheader {
+    font-size: 1.3rem; /* Further reduced font size for very small screens */
+  }
+  .para {
+    font-size: clamp(10px, 3vw, 14px); /* Further adjusted clamp for very small screens */
+  }
+  footer {
+    font-size: 0.9rem; /* Further reduced font size for very small screens */
+  }
 }
