@@ -100,10 +100,10 @@ function updateUIForQuestion(pokemon, options) {
     resultImageElement.textContent = "Who's that Pokemon?";
     pokemonImageElement.src = ""; // Clear the previous image
 
-    // Load the new image after a short delay to ensure it is not immediately visible
+    // no delay
     setTimeout(() => {
         pokemonImageElement.src = pokemon.sprites.other.dream_world.front_default;
-    }, 100);
+    }, 0);
 
     optionsContainer.innerHTML = "";
     options.forEach(option => {
