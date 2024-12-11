@@ -14,7 +14,7 @@ const loadingContainer = document.getElementById("loadingContainer");
 let usedPokemonIDs = new Set(); // Set to store unique Pokémon IDs
 let count = 0; // Counter for questions answered
 let points = 0;
-let showLoading = false;
+let showLoading = true;
 
 // Step 3: Fetch Pokémon data by ID
 async function fetchPokemonByID(id) {
