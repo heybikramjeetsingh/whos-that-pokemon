@@ -181,7 +181,7 @@ button.wrong {
   #points {
     font-size: clamp(12px, 3vw, 16px);
     position: relative;
-    bottom: -60px;
+    bottom: -100px;
   }
 }
 
@@ -201,7 +201,7 @@ button.wrong {
   #points {
     font-size: clamp(12px, 3vw, 16px);
     position: relative;
-    bottom: -60px;
+    bottom: -100px;
   }
 
 }
