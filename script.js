@@ -144,7 +144,7 @@ function checkAnswer(isCorrect, event) {
 
 // 5) Function to randomize the pokemon ID
 function getRandomPokemonId() {
-  return Math.floor(Math.random() * 1025) + 1;
+  return Math.floor(Math.random() * 151) + 1;
 }
 
 // 12.1) Create the shuffleArray function
