@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: top;
+  justify-content: center;
   text-align: center;
   background-image: url("assets/pokemon_world.jpg");
   background-attachment: fixed;
