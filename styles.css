@@ -91,9 +91,18 @@ button.wrong {
 }
 
 #loadingContainer {
-  height: clamp(300px, 50vh, 500px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#loadingContainer.show {
+  display: flex;
+  opacity: 1;
+}
+
+#loadingContainer.hide {
   display: none;
-  width: 100%;
+  opacity: 0;
 }
 
 #loadingIcon {
@@ -127,6 +136,8 @@ button.wrong {
 
 .show {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
