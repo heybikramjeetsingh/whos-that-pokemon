@@ -30,7 +30,7 @@ body {
   background-repeat: no-repeat;
   color: var(--white-color);
   font-family: 'Chakra Petch', sans-serif;
-  max-height: 100vh;
+  height: 100%;
   position: relative;
 }
 
