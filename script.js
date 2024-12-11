@@ -84,7 +84,7 @@ async function loadQuestionWithOptions() {
   shuffleArray(options);
 
   // 13) Clear any previous result and update pokemon image to fetched image URL from the "sprites"
-  resultElement.textContent = "Who's that Pokemon?";
+  resultElement.textContent = "";
   pokemonImageElement.src = pokemon.sprites.other.dream_world.front_default;
 
   // 14) Create options HTML elements from options array in the DOM
@@ -123,13 +123,13 @@ function checkAnswer(isCorrect, event) {
   // 15.6) Choose text for right / wrong answer.
   if (isCorrect) {
     // 15.7) Call displayResult function.
-    displayResult("Correct answer!", "correct");
+    displayResult("", "correct");
     // 15.8) If correct increase the points by 1
     points++;
     pointsElement.textContent = points;
     event.target.classList.add("correct");
   } else {
-    displayResult("Wrong answer...", "wrong");
+    displayResult("", "wrong");
     event.target.classList.add("wrong");
   }
 
@@ -144,7 +144,7 @@ function checkAnswer(isCorrect, event) {
 
 // 5) Function to randomize the pokemon ID
 function getRandomPokemonId() {
-  return Math.floor(Math.random() * 151) + 1;
+  return Math.floor(Math.random() * 1025) + 1;
 }
 
 // 12.1) Create the shuffleArray function

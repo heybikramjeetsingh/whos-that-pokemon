@@ -1,63 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Who's that Pokemon?</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
     <script src="script.js" defer></script>
-    <link
-      rel="preload"
-      href="assets/pokemon_heading.png"
-      as="Who's that Pokemon?"
-    />
+    <link rel="preload" href="assets/pokemon_heading.png" as="image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://pokeapi.co" />
-  </head>
+</head>
 
-  <body class="game">
+<body>
     <div class="container">
-      <h4>
-        <img
-          class="header"
-          id="result"
-          src="assets/pokemon_heading.png"
-          alt="Who's That Pokémon logo"
-        />
-      </h4>
-      <h4 id="points">
-        Points: <span id="pointsValue">0</span>/<span id="totalCount">0</span>
-      </h4>
-      <img id="pokemonImage" alt="" />
+        <h4>
+            <img class="wtp" id="wtp" src="assets/pokemon_heading.png" alt="" />
+        </h4>
+        <h3 id="result" class="header"></h3>
+        
+        <img id="pokemonImage" alt="" />
     </div>
 
     <div id="options" class="options-container">
-      <button>Butterfree</button>
-      <button>Ditto</button>
-      <button>Mr-Mime</button>
-      <button>Nidorino</button>
     </div>
 
     <div id="loadingContainer" class="loading-container">
-      <img
-        id="loadingIcon"
-        src="assets/loading_ball.gif"
-        alt="Loading animation"
-      />
+        <img id="loadingIcon" src="assets/loading_ball.gif" alt="loading..." />
     </div>
 
-    <p class="para">
-      Challenge your Pokémon knowledge in Who's That Pokémon?! Guess the names
-      of Pokémon based on their images, earn points for correct answers, and
-      test how well you really know your Pokédex!
-    </p>
+    <h4 id="points">
+        Points: <span id="pointsValue">0</span>/<span id="totalCount">0</span>
+    </h4>
 
-    <footer>
-      <p class="para">
-        For more information, please read our
-        <a href="disclaimer.html" class="link">Disclaimer</a>.
-      </p>
-    </footer>
-  </body>
+</body>
+
 </html>
