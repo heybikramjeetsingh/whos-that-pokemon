@@ -31,8 +31,7 @@ body {
   background-repeat: no-repeat;
   color: var(--white-color);
   font-family: 'Chakra Petch', sans-serif;
-  max-height: 100vh;
-  position: relative;
+  padding: 20px;
 }
 
 .container {
@@ -174,8 +173,6 @@ button.wrong {
 
   #points {
     font-size: clamp(12px, 3vw, 16px);
-    position: relative;
-    bottom: -60px;
   }
 }
 
@@ -190,4 +187,14 @@ button.wrong {
     height: 40px;
   }
 
+  body {
+    background-size: cover;
+  }
+
+  #pokemonImage {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+  }
 }
